@@ -1,2 +1,13 @@
 # ST7735Bitmap
-This sketch can display a bitmap on ST7735.
+ST7735にビットマップ画像を表示できるスケッチです。
+ArduinoUnoなどのmegaAVRシリーズはもちろん、tinyAVRシリーズ、ESP32、RaspberryPiPicoなどほぼすべてのArduinoマイコンに対応しています。~~DigitalWriteしか使ってないもん~~
+しかし、フルカラーのビットマップは容量が大きいため注意が必要です。例えば、160x80なら25KB、160x128なら40KB必要です。
+このスケッチは16ビットカラーで動作しています。
+[配線](#haisen)
+[ビットマップの表示](#bmp)
+[コマンドリスト](#cmd)
+[ST7735の基礎知識](#chishiki)
+<a id="haisen"></a>
+##配線
+この表はデフォルトの配線です。15行目から18行目をいじることによってピン配置は自由に変えることができます。
+
